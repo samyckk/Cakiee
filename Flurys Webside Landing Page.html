@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cakiee Webside Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="image/img2.png" width="200" height="200"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Five Generations Of
+                    Fine Confections</h2>
+                <h2>It's <span><u>Cakiee</u></span></h2><br>
+                <p>Cakiee, the legendary tearoom on fashionable Park Street in Kolkata was founded in the year 1927 by
+                    a Swiss expatriate couple Mr and Mrs J Flurys. Presenting fine European traditional confections, it
+                    soon became a popular meeting place for all ages. It introduced the city.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imageBox">
+                <img src="image/img1.png" class="flurys">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="image/img1.png" onclick="imgSlider('image/img1.png');changeCircleColour('#eb7495')"></li>
+            <li><img src="image/img2.png" onclick="imgSlider('image/img2.png');changeCircleColour('#9699FF')"></li>
+            <li><img src="image/img3.png" onclick="imgSlider('image/img3.png');changeCircleColour('#663300')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="image/facebook.png"></a></li>
+            <li><a href="#"><img src="image/instagram.png"></a></li>
+            <li><a href="#"><img src="image/twitter.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.flurys').src = anything;
+        }
+
+        function changeCircleColour(color) {
+            const circle = document.querySelector('.circle')
+            circle.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
